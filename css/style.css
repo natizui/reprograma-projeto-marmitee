@@ -1,5 +1,5 @@
 * {
-    font-size: 20px;
+    font-size: 18px;
     color: gray;
 }
 
@@ -9,10 +9,15 @@
 }
 
 header {
-    background: url(../fotos/Marmitee.jpg);
+    background: url(../fotos/1024x400.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    min-height: 95vh;
+    min-height: 56vh;
+    margin-bottom: 10px;
 }
+
+/* #section-app {
+    background-color: rgb(116, 112, 112);
+} */
 
