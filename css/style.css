@@ -1,0 +1,18 @@
+* {
+    font-size: 20px;
+    color: gray;
+}
+
+
+#navbarTogglerDemo02 ul li a:hover {
+    color: #EE900E;
+}
+
+header {
+    background: url(../fotos/Marmitee.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 95vh;
+}
+
