@@ -1,0 +1,69 @@
+header {
+    display: none;
+}
+
+
+.app-imagem img {
+    max-height: 60vh;
+}
+.app-funcionalidades1{
+    display: none;
+}
+.app-funcionalidades2 {
+    grid-area: icones2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.app-funcionalidades3 {
+    grid-area: icones3;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.app-imagem {
+    grid-area: imagem-celular;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.app-infos {
+    grid-area: infos;
+    text-align: center;
+    margin: 3vh 15vw;
+}
+.grid-app01-conteudo {
+    display: grid;
+    grid-template-areas: 'imagem-celular' 'icones2' 'icones3' 'infos';
+    width: 100%;
+    height: 70vh;
+    grid-row-gap: 2vh;
+    margin-top: 15vh;
+}
+
+@media(min-width:768px) {
+    .app-funcionalidades1 {
+        grid-area: icones1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-end;
+    }
+    .app-funcionalidades2 {
+        grid-area: icones2;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .app-funcionalidades3 {
+        display: none;
+    }
+    .app-imagem {
+        grid-area: imagem-celular;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .grid-app01-conteudo {
+        grid-template-areas: 'icones1 imagem-celular icones2' 'infos infos infos';
+    }
+}    
