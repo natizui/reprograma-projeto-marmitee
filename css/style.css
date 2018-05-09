@@ -8,7 +8,7 @@
     color: #EE900E;
 }
 
-header {
+.header {
     background: url(../fotos/1024x400.png);
     background-size: cover;
     background-repeat: no-repeat;

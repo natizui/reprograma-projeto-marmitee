@@ -1,5 +1,13 @@
-header {
-    display: none;
+.app-header {
+    background: url('../fotos/header-app.jpg');
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 
