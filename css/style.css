@@ -17,7 +17,18 @@ header {
     margin-bottom: 10px;
 }
 
-/* #section-app {
-    background-color: rgb(116, 112, 112);
-} */
+#image {
+    -moz-transition: transform 1s;
+    -webkit-transition: transform 1s;
+    transition: transform 1s;
+}
 
+.flip {
+    transform: rotateX(-180deg);
+}
+
+#telas-app {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
