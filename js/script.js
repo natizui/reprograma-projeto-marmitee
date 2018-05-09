@@ -1,9 +1,7 @@
 $(document).ready(function() {
-    $( ".img-flip" ).hover( function() {
-        $("#image").toggleClass('flip');
-    });
-
-    $( ".img-flip1" ).hover( function() {
-        $("#image-1").toggleClass('flip');
-    });
+    $( ".img-flip" ).mouseover( function() {
+        $(this).addClass('flip');
+    }).mouseout(function(){
+        $(this).removeClass('flip');
+    })
 });
