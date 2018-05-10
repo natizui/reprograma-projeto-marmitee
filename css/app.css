@@ -1,13 +1,34 @@
 .app-header {
-    background: url('../fotos/header-app.jpg');
-    background-position: left;
+    background: url('../fotos/Marmitee.jpg');
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 60vh;
+    height: 85vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.app-header div {
+    background-color: white;
+    padding: 1rem;
+    width: 45vw;
+    margin-right: 10vw;
+}
+
+.app-header h1 {
+    color: #6BBEC6;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.app-chamada {
+    color: #6BBEC6;
+    text-transform: uppercase;
+    text-align: right;
+    font-weight: bold;
 }
 
 
@@ -64,6 +85,14 @@
     }
     .app-funcionalidades3 {
         display: none;
+    }
+    .app-icones {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        max-width: 128px;
     }
     .app-imagem {
         grid-area: imagem-celular;
