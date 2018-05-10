@@ -8,7 +8,7 @@ body {
 }
 
 nav {
-    background-color: rgba(219, 205, 205, 0.301);
+    background-color: rgba(219, 205, 205, 0.233);
 }
 
 #navbarTogglerDemo02 ul li a:hover {
@@ -38,6 +38,7 @@ header {
     height: 100%;
     transform-style: preserve-3d;
     transition: all 1.0s linear;
+    margin: 20px;
 }
 
 .f1-container:hover .f1-card {
@@ -52,13 +53,15 @@ header {
 }
 
 .face.back {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     transform: rotateY(180deg);
     box-sizing: border-box;
     padding: 10px;
     color: white;
     text-align: center;
-    background-color: #aaa;
+    background-color: rgb(112, 109, 109);
 }
 
 .image-flip {
@@ -115,19 +118,15 @@ header {
     background-color:#2b2b2b;
 }
 
-
-
 #feitopor p {
     font-size: 15px;
 }
 
 #feitopor p img {
-    height: : 5px;
+    height: 5px;
     display: flex;
     justify-content: center;
     
-}
-
 }
 
 .device-container {
@@ -178,8 +177,18 @@ header {
 }
 
 .section-fornecedores {
-    margin: 10px 30px 60px 30px;
+    margin: 30px 30px 90px 30px;
     text-align: center;
     justify-content: center;
 }
 
+.fornecedores-text {
+    color: #fff;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+.sobre-text {
+    font-size: 18px;
+}
