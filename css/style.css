@@ -70,3 +70,28 @@ header {
     width: 500px;
     height: 325px
 }
+
+/************footer*************/
+
+
+
+
+ /* link não visitados  */
+#footer a:link {
+    color: gray;
+}
+
+/* link visitados */
+#footer a:visited {
+    color: gray;
+}
+
+/* mouse no link */
+#footer ul li a:hover {
+    color: #EE900E;
+}
+
+/* link selecionados */
+#footer a:active {
+    color: gray;
+} 
