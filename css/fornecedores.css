@@ -1,0 +1,105 @@
+p {
+    font-size: 0.7rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+@media(min-width:768px) {
+    p {
+        font-size: 1.2rem;
+    }
+}
+
+header {
+    padding: 25vh 0 10vh 0;
+    margin-bottom: 5vh;
+    background-color: #fff;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nutri01 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nutri01-grid {
+    grid-template-areas: 'nutri01' 'nutri02';
+    height: 150vh;
+}
+
+.nutri-imagem img {
+    max-height: 30vh;
+    max-width: 100%;
+}
+
+.nutri-chamada {
+    grid-area: chamada-nutri;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    height: 50%;
+}
+.nutri-imagem {
+    grid-area: imagem-nutri;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: 50%;
+}
+.grid-nutri01-conteudo, .grid-nutri02-conteudo {
+    grid-area: nutri01;
+    display: grid;
+    grid-template-areas: 'imagem-nutri' 'chamada-nutri';
+    width: 70vw;
+    height: 45%;
+    grid-gap: 5vw;
+    margin-bottom: 5vh;
+}
+.grid-nutri02-conteudo {
+    grid-area: nutri02;
+    display: grid;
+    grid-template-areas: 'imagem-nutri' 'chamada-nutri';
+    width: 70vw;
+    height: 45%;
+    grid-gap: 5vw;
+    margin-bottom: 5vh;
+}
+
+.junte-se {
+    padding:0.3em 1.2em;
+    margin:0 0.1em 0.1em 0;
+    border-radius:0.3em;
+    text-decoration:none;
+    text-align: center;
+    color: black;
+    font-size: 1rem;
+    background-image: linear-gradient(to bottom, #ed9024, #f6d39e);
+    text-transform: uppercase;
+    text-shadow: 0 0.04em 0.04em rgba(115, 115, 115, 0.35);
+}
+.junte-se:hover {
+    background-image: linear-gradient(to bottom, #f6d39e, #ed9024);
+    text-decoration: none;
+    color: black;
+}
+
+@media(min-width:768px) {
+    .grid-nutri01-conteudo {
+        grid-template-areas: 'chamada-nutri imagem-nutri';
+    }
+    .grid-nutri02-conteudo {
+        grid-template-areas: 'imagem-nutri chamada-nutri';
+    }
+    .nutri-chamada {
+        padding: 5vh 0;
+    }
+    .nutri01-grid {
+        height: 80vh;
+    }
+}    
