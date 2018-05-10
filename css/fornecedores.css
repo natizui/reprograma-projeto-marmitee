@@ -11,14 +11,17 @@ p {
 header {
     padding: 25vh 0 10vh 0;
     margin-bottom: 5vh;
-    background: url("../fotos/handshake.jpg");
+    background: url("../fotos/IMG_4054.jpg");
     background-position: center;
     background-size: cover;
     height: 40vh;
     display: flex;
     flex-direction: column;
     justify-content: baseline;
-    align-items: center;
+    align-items: flex-start;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 1px gray;
 }
 
 .nutri01 {
@@ -26,6 +29,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 2vh;
 }
 
 .nutri01-grid {
@@ -151,7 +155,7 @@ header {
 
 .porque-grid {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto auto auto;
     width: 80vw;
     grid-gap: 2rem; 
 }
@@ -168,6 +172,7 @@ header {
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin: 5vh;
 }
 
 .porque h2 {

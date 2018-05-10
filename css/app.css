@@ -1,5 +1,5 @@
 .app-header {
-    background: url('../fotos/Marmitee.jpg');
+    background: url('../fotos/strawberry.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -11,17 +11,17 @@
 }
 
 .app-header div {
-    background-color: white;
+    /* background-color: white; */
     padding: 1rem;
-    width: 45vw;
-    margin-right: 10vw;
+    width: 40vw;
+    /* margin-right: 10vw; */
 }
 
 .app-header h1 {
-    color: #6BBEC6;
+    color: indigo;
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 3rem;
+    font-size: 2.7rem;
 }
 
 .app-chamada {
@@ -104,3 +104,7 @@
         grid-template-areas: 'icones1 imagem-celular icones2' 'infos infos infos';
     }
 }    
+
+.app01 {
+    margin-bottom: 15vh;
+}
