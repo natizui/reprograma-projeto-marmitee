@@ -3,24 +3,21 @@
     color: gray;
 }
 
+nav {
+    background-color: rgba(219, 205, 205, 0.301);
+}
 
 #navbarTogglerDemo02 ul li a:hover {
     color: #EE900E;
 }
 
 header {
-    background: url(../fotos/1024x400.png);
+    background: url(../fotos/Marmitee.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    min-height: 56vh;
+    min-height: 85vh;
     margin-bottom: 10px;
-}
-
-.telas-app {
-    display: flex;
-    justify-content: center;
-    text-align: center;
 }
 
 #f1_container {
@@ -56,4 +53,20 @@ header {
     color: white;
     text-align: center;
     background-color: #aaa;
+}
+
+#teste1 {
+    background: url(../fotos/nutricionist.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 500px;
+    height: 325px
+}
+
+#teste2 {
+    background: url(../fotos/marmitas.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 500px;
+    height: 325px
 }
