@@ -11,11 +11,13 @@ p {
 header {
     padding: 25vh 0 10vh 0;
     margin-bottom: 5vh;
-    background-color: #fff;
+    background: url("../fotos/handshake.jpg");
+    background-position: center;
+    background-size: cover;
     height: 40vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: baseline;
     align-items: center;
 }
 
@@ -103,3 +105,74 @@ header {
         height: 80vh;
     }
 }    
+
+.nutri-container {
+    position: relative;
+    width: 20vw;
+    height: 20vw;
+}
+
+    .nutri-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: ghostwhite;
+}
+
+    .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #f6d39e;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+
+    .nutri-container:hover .overlay {
+    height: 100%;
+}
+
+    .nutri-card2 {
+    /* color: white; */
+    /* font-size: 20px; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.porque-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 80vw;
+    grid-gap: 2rem; 
+}
+
+@media(min-width: 768px) {
+    .porque-grid {
+        grid-template-areas: auto auto auto;
+    }
+}
+
+.porque {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.porque h2 {
+    margin-bottom: 3vh; 
+}
+
+
+

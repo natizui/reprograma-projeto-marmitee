@@ -3,6 +3,10 @@
     color: gray;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 nav {
     background-color: rgba(219, 205, 205, 0.301);
 }
@@ -20,31 +24,33 @@ header {
     margin-bottom: 10px;
 }
 
-#f1_container {
+.f1-container {
     position: relative;
     margin: 10px auto;
     width: 500px;
     height: 325px;
     z-index: 1;
-}
-#f1_container {
     perspective: 1000;
 }
-#f1_card {
+
+.f1-card {
     width: 100%;
     height: 100%;
     transform-style: preserve-3d;
     transition: all 1.0s linear;
 }
-#f1_container:hover #f1_card {
+
+.f1-container:hover .f1-card {
     transform: rotateY(180deg);
 }
+
 .face {
     position: absolute;
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
 }
+
 .face.back {
     display: block;
     transform: rotateY(180deg);
@@ -55,20 +61,23 @@ header {
     background-color: #aaa;
 }
 
-#teste1 {
-    background: url(../fotos/nutricionist.jpg);
-    background-size: cover;
-    background-position: center;
+.image-flip {
     width: 500px;
-    height: 325px
+    height: 325px;
 }
 
-#teste2 {
+#image-flip-1 {
+    background: url(../fotos/nutricionist.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#image-flip-2 {
     background: url(../fotos/marmitas.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
-    width: 500px;
-    height: 325px
 }
 
 /************footer*************/
@@ -117,5 +126,60 @@ header {
     display: flex;
     justify-content: center;
     
+}
+
+}
+
+.device-container {
+    background-color: #fff;
+    z-index: 40;
+}
+
+.carousel-text {
+    width: 300px;
+    margin-top: 90px;
+}
+
+.junte-se {
+    padding:0.3em 1.2em;
+    margin:0 0.1em 0.1em 0;
+    border-radius:0.3em;
+    text-decoration:none;
+    text-align: center;
+    color: black;
+    font-size: 1rem;
+    background-image: linear-gradient(to bottom, #ed9024, #f6d39e);
+    text-transform: uppercase;
+    text-shadow: 0 0.04em 0.04em rgba(115, 115, 115, 0.35);
+}
+.junte-se:hover {
+    background-image: linear-gradient(to bottom, #f6d39e, #ed9024);
+    text-decoration: none;
+    color: black;
+}
+
+#newsletteremail {
+    padding:0.3em 1.2em;
+    margin:0 0.1em 0.1em 0;
+    border-radius:0.3em;
+    width: 40%;
+}
+
+.section-newsletter {
+    background-color: #f0bf77;
+    text-align: center;
+    padding: 10px 0px 40px 0px;
+}
+
+.chamada-fornecedores {
+    font-size: 24px;
+    color: grey;
+    font-weight: bold;
+}
+
+.section-fornecedores {
+    margin: 10px 30px 60px 30px;
+    text-align: center;
+    justify-content: center;
 }
 
