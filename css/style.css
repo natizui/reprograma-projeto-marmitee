@@ -73,9 +73,6 @@ header {
 
 /************footer*************/
 
-
-
-
  /* link não visitados  */
 #footer a:link {
     color: gray;
@@ -89,9 +86,36 @@ header {
 /* mouse no link */
 #footer ul li a:hover {
     color: #EE900E;
+     text-decoration: none;
 }
 
 /* link selecionados */
 #footer a:active {
     color: gray;
 } 
+
+#footer p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   
+}
+
+#feitopor {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    justify-content: center;
+    background-color:#2b2b2b;
+}
+
+
+
+#feitopor p {
+    font-size: 15px;
+}
+
+#feitopor p img {
+    height: : 5px;
+    display: flex;
+    justify-content: center;
+    
+}
+
