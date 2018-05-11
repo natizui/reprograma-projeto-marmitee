@@ -1,10 +1,11 @@
 * {
-    font-size: 18px;
-    color: gray;
+    font-size: 20px;
+    color: rgba(58, 54, 54, 0.671);
 }
 
 body {
     overflow-x: hidden;
+    margin: auto 0;
 }
 
 nav {
@@ -20,7 +21,7 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    min-height: 85vh;
+    min-height: 88vh;
     margin-bottom: 10px;
 }
 
@@ -173,13 +174,16 @@ header {
 .chamada-fornecedores {
     font-size: 24px;
     color: grey;
-    font-weight: bold;
 }
 
 .section-fornecedores {
-    margin: 30px 30px 90px 30px;
+    padding: 10px 95px 95px 95px;
     text-align: center;
     justify-content: center;
+}
+
+.section-fornecedores h3 {
+    margin: 10px 50px 50px 50px;
 }
 
 .fornecedores-text {
@@ -194,6 +198,13 @@ header {
 }
 
 .sobre-image {
-    width: 40%;
-    height: 40%;
+    width: 450px;;
+    height: 250px;
+    margin: 40px;
+}
+
+.sessao-sobre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
