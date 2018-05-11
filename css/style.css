@@ -1,6 +1,26 @@
+
 * {
-    font-size: 18px;
     color: gray;
+}
+
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.7rem;
+}
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+}
+@media(min-width: 768px) {
+    p {
+        font-size: 1rem;
+    }
+}
+@media(min-width: 1024px) {
+    p {
+        font-size: 1.2rem;
+    }
 }
 
 body {
@@ -80,55 +100,6 @@ header {
     background-position: center;
 }
 
-/************footer*************/
-
- /* link não visitados  */
-#footer a:link {
-    color: gray;
-}
-
-/* link visitados */
-#footer a:visited {
-    color: gray;
-}
-
-/* mouse no link */
-#footer ul li a:hover {
-    color: #EE900E;
-     text-decoration: none;
-}
-
-/* link selecionados */
-#footer a:active {
-    color: gray;
-} 
-
-#footer p{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-   
-}
-
-#feitopor {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    display: flex;
-    justify-content: center;
-    background-color:#2b2b2b;
-}
-
-
-
-#feitopor p {
-    font-size: 15px;
-}
-
-#feitopor p img {
-    height: : 5px;
-    display: flex;
-    justify-content: center;
-    
-}
-
-}
 
 .device-container {
     background-color: #fff;
@@ -183,3 +154,63 @@ header {
     justify-content: center;
 }
 
+
+/*#region footer*/
+#logo-footer {
+    width: 35vw;
+}
+.telefone {
+    text-align: center;
+}
+/* link não visitados  */
+ #footer a:link {
+    color: gray;
+}
+/* link visitados */
+#footer a:visited {
+    color: gray;
+}
+/* mouse no link */
+#footer ul li a:hover {
+    color: #EE900E;
+    text-decoration: none;
+}
+/* link selecionados */
+#footer a:active {
+    color: gray;
+} 
+
+/*footer feitopor*/
+#feitopor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#2b2b2b;
+}
+#feitopor p{
+    margin: 0;
+}
+#feitopor img {
+    max-height: 3vh;
+}
+#feitopor-link {
+    margin-left: 0.3rem;
+}
+
+@media(min-width:768px) {
+    #feitopor p{
+        font-size: 0.8rem;
+    }
+    #logo-footer {
+        width: 20vw;
+    }
+}
+@media(min-width:1024px) {
+    #feitopor img {
+        max-height: 2vh;
+    }
+    #logo-footer {
+        width: 15vw;
+    }
+}
+/* #endregion */
