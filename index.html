@@ -9,7 +9,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-    <title>Marmitee</title>
+    <title>Document</title>
 </head>
 <body>
 
@@ -44,20 +44,21 @@
     <header class="jumbotron jumbotron-fluid"></header>
 
     <section class="container text-center" id="section-sobre">
-        <h2>Titulo 2</h2>
-        <div class="row mt-4">
-            <a class="col-lg-6" href="https://placeholder.com"><img src="http://via.placeholder.com/500x200"></a>
+        <!-- <h2>A Marmitee</h2> -->
+        <div class="row sessao-sobre">
+            <img class="sobre-image" src="fotos/mulheres.jpg" alt="">
             <div class="col-lg-6">
-                <h3>Sub-Titulo 1</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi inventore corrupti eos enim quasi quibusdam sequi, saepe ipsam. Iure nisi enim consequatur amet dolorum incidunt delectus expedita modi fuga officiis.</p>
+                <h3>A Marmitee</h3>
+                <p class="sobre-text">Na Marmitee você encontra Sabor, Saúde e Nutrição dia a dia. 
+                    Através de uma rede de nutricionistas especialmente selecionadas, você poderá encontrar o melhor para sua alimentação. Pensado para pessoas com diferentes necessidades de uma alimentação adequada, aqui você encontra uma nutricionista de acordo com a especialidade que procura: seja por um problema de saúde ou por uma reeducação alimentar.</p>
             </div>
         </div>
-        <div class="row mt-4">
+        <div class="row sessao-sobre">
             <div class="col-lg-6">
-                <h3>Sub-Titulo 2</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus non quam ullam officia nam pariatur. Aut fuga consectetur quae atque, laudantium dicta dolore! Dolorem, soluta laudantium ipsum nemo quibusdam tenetur?</p>
+                <!-- <h3>Nossa Missão</h3> -->
+                <p class="sobre-text">Depois é só pedir o cardápio que melhor te atende, que um dos nossos fornecedores prepara pra você! A nossa curadoria é feita cuidadosamente pensando no melhor para sua saúde e também para o seu bolso! Nosso intuito é ver você saudável e feliz!</p>
             </div>
-            <a class="col-lg-6" href="https://placeholder.com"><img src="http://via.placeholder.com/500x200"></a>
+            <img class="sobre-image" src="fotos/exemplo1.jpg" alt="">
         </div>
     </section>
     
@@ -67,13 +68,13 @@
             <div id="carousel-app" class="carousel slide col-lg-4 pull-right" data-ride="carousel">
                 <div class="caurosel-inner"> 
                     <div class="carousel-item active">
-                        <p class="carousel-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta alias possimus veritatis, architecto tenetur repellendus fugiat optio dolorum laborum temporibus iure odio quod maxime aliquid corrupti, neque quis quasi iste.</p>
+                        <p class="carousel-text">Através do nosso APP você encontra diversas opções de refeições saudáveis e nutricionistas.</p>
                     </div>
                     <div class="carousel-item"> 
-                        <p class="carousel-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta alias possimus veritatis, architecto tenetur repellendus fugiat optio dolorum laborum temporibus iure odio quod maxime aliquid corrupti, neque quis quasi iste.</p>
+                        <p class="carousel-text">Tenha um atendimento totalmente personalizado, de acordo com a sua rotina, atividade física e gosto alimentar. Aprenda a se alimentar de forma correta!</p>
                     </div>
                     <div class="carousel-item"> 
-                        <p class="carousel-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta alias possimus veritatis, architecto tenetur repellendus fugiat optio dolorum laborum temporibus iure odio quod maxime aliquid corrupti, neque quis quasi iste.</p>
+                        <p class="carousel-text">Orientações direcionadas com o objetivo de melhorar a qualidade de vida e garantir maior longevidade.</p>
                     </div>
                 </div>
 
@@ -83,7 +84,7 @@
                     <li data-target="#carousel-app" data-slide-to="2"></li>
                 </ul>
 
-                <a class="carousel-control-prev" href="#carousel-app" data-slide="prev"><span class="carousel-control-prev-icon"></span></a>
+                <!-- <a class="carousel-control-prev" href="#carousel-app" data-slide="prev"><span class="carousel-control-prev-icon"></span></a> -->
                 <a class="carousel-control-next" href="#carousel-app" data-slide="next"><span class="carousel-control-next-icon"></span></a>
 
             </div>
@@ -98,7 +99,7 @@
                 <div class="f1-card" class="shadow">
                     <div id="image-flip-1" class="front face image-flip"></div>
                     <div class="back face center">
-                        <p>Sou nutricionista e adoro meu trabalho prezo pela alimentação saudável, faço atendimento nutricional ou faço marmitas saudáveis.</p>
+                        <p class="fornecedores-text">Sou nutricionista e adoro meu trabalho prezo pela alimentação saudável, faço atendimento nutricional ou faço marmitas saudáveis.</p>
                     </div>
                 </div>
             </a>
@@ -107,7 +108,7 @@
                 <div class="f1-card" class="shadow">
                     <div id="image-flip-2" class="front face image-flip"></div>
                     <div class="back face center">
-                        <p>Não tenho conteúdo</p>
+                        <p class="fornecedores-text">Quero ser fornecedor, faço marmitas nutricionais e saudáveis.</p>
                     </div>
                 </div>
             </a>
@@ -117,60 +118,71 @@
     <section class="section-newsletter">
         <h3 class="title m-4">Receba nossa newsletter e fique por dentro das novidades!</h3>
         <div class="formulario" >
-            <form action="#">
-                <input type="text" id="newsletteremail" name="newsletteremail" placeholder="Insira seu email">
-                <input class="junte-se" type="submit" class="newsletterinput" value="Enviar">
-            </form>
+            <a class="junte-se" href="https://goo.gl/forms/NciJoS1Oc7xTheCN2" target="_blank">Cadastre-se!</a>
         </div>
     </section>
 
-<!-- footer -->
+                                <!--  footer logo-->
 
-    <!--  footer logo-->
     <div id="footer" class="navbar navbar-light bg-light  d-flex justify-content-around p-4" >
-        <a class="navbar-brand" href="index.html">
-            <img id="logo-footer" src="./fotos/logo-marmitee.png" alt="logo escrito marmitee">
-        </a>
-                                
-        <!--  footer mapa -->
-        <ul  class="nav flex-column">
-            <li class="nav-item" >
-                <a class="nav-link"  href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link"  href="app.html">Aplicativo</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link " href="fornecedores.html">Fornecedores</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link " href="index.html">Sobre</a>
-            </li>
-        </ul>
-                                
-        <!--  footer midias-->
-        <ul class="nav">       
-            <li class="nav-item">
-                <p>bemarmitee@marmitee.com</p>
-                <p class="telefone">Tel 11 987913698</p>
-            </li>
-        </ul>
+      <a class="navbar-brand" href="index.html">
+        <img src="./fotos/logo-marmitee.png"  style="width: 150px; font-family: Verdana, Geneva, Tahoma, sans-serif;" alt="logo escrito marmitee">
+      </a>
 
-        <div id="midias" >
-            <a href="http://www.facebook.com/amarmitee">
-                <img src="fotos/facebook.png">
-            </a>
-        </div>
-    </div>
+                             <!--  footer mapa -->
+
+          <ul  class="nav flex-column" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">
+                  <li class="nav-item" >
+                    <a class="nav-link"  href="index.html">Home</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link"  href="app.html">Aplicativo</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link " href="fornecedores.html">Fornecedores</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link " href="index.html">Sobre</a>
+                  </li>
+
+                  
+
+          </ul>
+                            <!--  footer midias-->
+            <ul class="nav">       
+                <li class="nav-item" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">
+                    <p class="text-secondary" style=" padding-top: 20px; font-size: 15px;">bemarmitee@marmitee.com</p>
+                    <p class="text-secondary" style=" text-align:center;font-size: 15px;">Tel 11 987913698</p>
+                </li>
+            </ul>
+
+             <div id="midias" class="">
+                 <a href="http://www.facebook.com/amarmitee">
+                    <img src="fotos/facebook.png">
+                  </a>
+
+        
+                 </div>
+
+               </div>
+
+
                     
-    <!--  footer feito por -->
-    <div id="feitopor" >
-        <p>Feito por alunas</p>    
-        <a id="feitopor-link" href="www.reprograma.com.br"> 
-            <img src="fotos/logo-reprograma.png">
-        </a>
+
+    </div>
+                  <!--  footer feito por -->
+
+    <nav id="feitopor" class="navbar d-flex justify-content-center" style="padding:0;font-family: Verdana, Geneva, Tahoma, sans-serif;padding-left: 120px;">
+            Feito por alunas<a class="navbar-brand" href="www.reprograma.com.br"> 
+                 <img style="width: 100px; padding-left: 10px;" src="fotos/logo-reprograma.png">
+             </a>
+    </nav>
+
+      </div>
     </div>
 
-    <script src="js/script.js" ></script>
 </body>
 </html>
