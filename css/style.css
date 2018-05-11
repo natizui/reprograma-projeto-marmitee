@@ -25,10 +25,11 @@ h1 {
 
 body {
     overflow-x: hidden;
+    margin: auto 0;
 }
 
 nav {
-    background-color: rgba(219, 205, 205, 0.301);
+    background-color: rgba(219, 205, 205, 0.233);
 }
 
 #navbarTogglerDemo02 ul li a:hover {
@@ -40,7 +41,7 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    min-height: 85vh;
+    min-height: 88vh;
     margin-bottom: 10px;
 }
 
@@ -58,6 +59,7 @@ header {
     height: 100%;
     transform-style: preserve-3d;
     transition: all 1.0s linear;
+    margin: 20px;
 }
 
 .f1-container:hover .f1-card {
@@ -72,13 +74,15 @@ header {
 }
 
 .face.back {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     transform: rotateY(180deg);
     box-sizing: border-box;
     padding: 10px;
     color: white;
     text-align: center;
-    background-color: #aaa;
+    background-color: rgb(112, 109, 109);
 }
 
 .image-flip {
@@ -99,7 +103,6 @@ header {
     background-repeat: no-repeat;
     background-position: center;
 }
-
 
 .device-container {
     background-color: #fff;
@@ -145,12 +148,39 @@ header {
 .chamada-fornecedores {
     font-size: 24px;
     color: grey;
-    font-weight: bold;
 }
 
 .section-fornecedores {
-    margin: 10px 30px 60px 30px;
+    padding: 10px 95px 95px 95px;
     text-align: center;
+    justify-content: center;
+}
+
+
+.section-fornecedores h3 {
+    margin: 10px 50px 50px 50px;
+}
+
+.fornecedores-text {
+    color: #fff;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+.sobre-text {
+    font-size: 18px;
+}
+
+.sobre-image {
+    width: 450px;;
+    height: 250px;
+    margin: 40px;
+}
+
+.sessao-sobre {
+    display: flex;
+    align-items: center;
     justify-content: center;
 }
 
